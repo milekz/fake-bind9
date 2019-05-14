@@ -1,8 +1,7 @@
 # Fake-bind9
 fake-bind9 - bind9 that answer with fake IP
 
-# Based on 9.12.4-P1
-
+# Based on Bind-9.14.1
 
 `/etc/bind` should have two major files: `named.conf` and `hook.sh`.
 
