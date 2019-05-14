@@ -1,5 +1,6 @@
 # Fake-bind9
-fake-bind9 - bind9 that answer with fake IP
+
+fake-bind9 - bind9 that answer all queries with fake IP
 
 # Based on Bind-9.14.1
 
