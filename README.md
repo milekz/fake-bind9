@@ -19,6 +19,23 @@ Sample command to run with fake IP set to 1.2.3.4:
 
 ```
 docker run -d -p 53:53/udp -e FAKEIP=1.2.3.4 milekz/fake-bind9
+
+#
+# nslookup google.com 127.0.0.1
+Server:		127.0.0.1
+Address:	127.0.0.1#53
+
+Name:	goOGLe.com
+Address: 1.2.3.4
+
+# nslookup facebook.com 127.0.0.1
+Server:		127.0.0.1
+Address:	127.0.0.1#53
+
+Name:	faCEBook.com
+Address: 1.2.3.4
+
+#
 ```
 Sample command to run :
 
