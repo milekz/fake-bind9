@@ -18,7 +18,7 @@ files in it.
 Sample command to run with fake IP set to 1.2.3.4:
 
 ```
-docker run -d -p 53:53/udp -e FAKEIP=1.2.3.4 milekz/fake-bind9
+# docker run -d -p 53:53/udp -e FAKEIP=1.2.3.4 milekz/fake-bind9
 
 #
 # nslookup google.com 127.0.0.1
@@ -40,8 +40,8 @@ Address: 1.2.3.4
 Sample command to run :
 
 ```
-docker run -d -v /srv/docker/bind:/etc/bind milekz/fake-bind9
+# docker run -d -v /srv/docker/bind:/etc/bind milekz/fake-bind9
 
-docker run -d -v /srv/docker/bind:/etc/bind -p 53:53/udp milekz/fake-bind9
+# docker run -d -v /srv/docker/bind:/etc/bind -p 53:53/udp milekz/fake-bind9
 ```
 
