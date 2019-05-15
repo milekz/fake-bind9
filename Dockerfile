@@ -8,7 +8,7 @@ RUN set -ex \
     && pip3 install ply \
     && curl -sSL https://ftp.isc.org/isc/bind9/$BINDVERSION/bind-$BINDVERSION.tar.gz | tar xz \
     && cd bind-$BINDVERSION \
-       && CFLAGS="-O3" ./configure  --enable-filter-aaaa --enable-threads  --prefix=/usr/local/bind9 --enable-largefile   \
+       && CFLAGS="-O3" ./configure  --prefix=/usr/local/bind9 --enable-largefile   \
           --exec-prefix=/usr/local/bind9 --with-libxml2 --with-libjson --with-libtool --enable-static=no \
           --enable-full-report   --with-dlz-postgres=yes  \
        && make \
