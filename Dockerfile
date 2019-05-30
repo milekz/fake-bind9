@@ -1,7 +1,7 @@
 FROM alpine
 
 RUN set -ex \
-    && export BINDVERSION=9.14.1 \
+    && export BINDVERSION=9.14.2 \
     && apk upgrade --update \
     && apk add --virtual .bind9-builddeps postgresql-dev  build-base bash curl libressl-dev  libcap-dev perl linux-headers bsd-compat-headers libxml2-dev go git musl-dev json-c-dev  python3 py3-pip  \
     && apk add --virtual .bind9-deps libxml2 libcap libgcc s6 json-c libpq \
